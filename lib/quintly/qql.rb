@@ -34,7 +34,7 @@ module Quintly
         "profileIds=#{configuration.profile_ids}")
       )
       response = api_client.get(url)
-      response.success? ? JSON.parse(response.body)['data'] : reponse.body
+      response.success? ? JSON.parse(response.body)['data'] : response.body
     end
   end
 end
