@@ -24,12 +24,12 @@ Or install it yourself as:
 require 'quintly'
 
 configuration = Quintly::Configuration.new do |conf|
-  start_time: '2013-08-01',
-  end_time: '2013-08-15',
-  interval: 'daily', #(daily, weekly, monthly, yearly, total)
-  profile_ids: 1111,
-  username: 'your username',
-  password: 'your password'
+  conf.start_time = '2013-08-01',
+  conf.end_time = '2013-08-15',
+  conf.interval = 'daily', #(daily, weekly, monthly, yearly, total)
+  conf.profile_ids = 1111,
+  conf.username = 'your username',
+  conf.password = 'your password'
 end
 
 # get fanCount info with predefined metric

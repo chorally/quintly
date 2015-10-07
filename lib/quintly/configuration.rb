@@ -1,6 +1,10 @@
 module Quintly
   class Configuration
     ATTRIBUTES = [
+      :start_time,
+      :end_time,
+      :interval,
+      :profile_ids,
       :username,
       :password
     ]
