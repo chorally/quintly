@@ -27,17 +27,19 @@ configuration = Quintly::Configuration.new do |conf|
   conf.start_time = '2013-08-01',
   conf.end_time = '2013-08-15',
   conf.interval = 'daily', #(daily, weekly, monthly, yearly, total)
-  conf.profile_ids = 1111,
+  conf.profile_ids = '1111',
   conf.username = 'your username',
   conf.password = 'your password'
 end
 
+client = Quintly::QQL.new(configuration)
+
 # get fanCount info with predefined metric
-result = Quintly::QQL.metric('fanCount').first
+result = client.metric('fanCount').first
 #=> {"dim1"=>1111, "dim2"=>"2013-08-01 00:00:00", "fans"=>1340103}
 
 # get fanCount info with QQL
-result = Quintly::QQL.query('SELECT profileId, time, fans FROM facebook').first
+result = client.query('SELECT profileId, time, fans FROM facebook').first
 #=> {"profileId"=>1111, "time"=>"2013-08-01 00:00:00", "fans"=>1340103}
 
 

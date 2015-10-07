@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'vcr'
 
 describe Quintly do
-  let(:profile_ids) { 'profile_id1, profileid2' }
+  let(:profile_ids) { 'profile_id1, profile_id2' }
 
   let(:configuration) do
     double(
