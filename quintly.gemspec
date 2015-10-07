@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["davide@chorally.com"]
 
   spec.summary       = %q{Gem to wrap Quintly API}
-  spec.description   = %q{Basic API implementation for Quintly API http://www.api.quintly.com}
+  spec.description   = %q{Basic API implementation for Quintly API https://api.quintly.com}
   spec.homepage      = "https://github.com/chorally/quintly"
   spec.license       = "MIT"
 

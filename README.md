@@ -1,6 +1,6 @@
 # Quintly
 
-This is a sample gem to wrap Quintly API http://www.api.quintly.com
+This is a sample gem to wrap Quintly API https://api.quintly.com
 
 ## Installation
 
