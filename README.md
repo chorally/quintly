@@ -57,4 +57,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/choral
 
 
 ## License
-The restcountry GEM is released under the MIT License.
+The quintly GEM is released under the MIT License.
